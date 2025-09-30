@@ -4,7 +4,7 @@ This project is a Pomodoro Timer CLI written in Rust. It focuses on a clean, rel
 
 I built this to deepen my Rust skills around file I/O, command‑line parsing, and basic data modeling while practicing ownership and error handling idioms. The implementation uses a small persisted state file to track session timing between separate invocations of the CLI.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video]()
 
 ## Development Environment
 

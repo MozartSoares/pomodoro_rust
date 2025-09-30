@@ -84,6 +84,8 @@ fn format_timestamp(time: SystemTime) -> String {
         .to_string()
 }
 
+
+// Path / filesystem helpers //
 fn sanitize_filename(s: &str) -> String {
     s.chars()
         .map(|c| {
@@ -96,7 +98,6 @@ fn sanitize_filename(s: &str) -> String {
         .collect()
 }
 
-// Path / filesystem helpers //
 fn app_root_dir() -> PathBuf {
     std::env::current_dir().unwrap_or_else(|_| PathBuf::from("."))
 }
@@ -139,6 +140,7 @@ fn resolve_session_log_path(note: &Option<String>, start_unix: i64) -> Result<Pa
     Ok(candidate)
 }
 
+// log handling //
 fn initialize_session_log(
     path: &Path,
     minutes: u64,
