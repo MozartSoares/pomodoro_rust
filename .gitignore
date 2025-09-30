@@ -1,0 +1,7 @@
+target/
+data/
+pomodoro_data/
+*.log
+*.tmp
+*.swp
+.DS_Store
